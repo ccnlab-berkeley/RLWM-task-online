@@ -27,8 +27,8 @@ $params = array(
                      $file_name // name of file in upload data
                     )
 );
-// $headers = array("Authorization: Bearer Q8HhJDk3JnRhBQPeYnoNP7vgcx4AEjlW"); primary access token
-$headers = array("Authorization: Bearer XXKRqMHHSaqu9seQ8W2egTQRmpaC19I8");
+
+$headers = array("Authorization: Bearer BOX_ACCESS_TOKEN");
 
 // leave section below alone
 

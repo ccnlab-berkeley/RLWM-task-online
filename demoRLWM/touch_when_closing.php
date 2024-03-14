@@ -2,8 +2,8 @@
 // WARNING: the below config can cause a serious security issue.
 // Please read https://portswigger.net/web-security/cors/access-control-allow-origin
 // Once you are done testing, you should limit the access
-// header('Access-Control-Allow-Origin: https://http://ucbpsych.ca1.qualtrics.com');
-header('Access-Control-Allow-Origin: https://experiments-ccn.berkeley.edu');
+// REPLACE with your website url
+header('Access-Control-Allow-Origin: REPLACE_ME');
 
 // NOTE: the below code expects three fields and will NOT work if any of these is missing.
 // - data_dir: specify the server directory to store data

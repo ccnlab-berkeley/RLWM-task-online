@@ -25,7 +25,7 @@ Papa.parsePromise = function(file) {
 const getCSV = () => {
   let csv = [];
   let requestP = new XMLHttpRequest();
-  requestP.open("GET", `https://experiments-ccn.berkeley.edu/demoRLWM/static/csv/sequence0.csv`, false); // URL of csv
+  requestP.open("GET", `https://REPLACE_ME/demoRLWM/static/csv/sequence0.csv`, false); // URL of csv
   requestP.send(null);
 
   let jsonObject = requestP.responseText.split(/\r?\n|\r/); // parses the csv as a json object

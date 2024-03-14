@@ -2,10 +2,10 @@
 You will only have to change the three string variables outside the functions. */
 
 // URL of where the PHP files are located -- replace with whatever website/directory you end up using
- const save_url = "https://experiments-ccn.berkeley.edu/demoRLWM/save_data.php";
- const upload_url = "https://experiments-ccn.berkeley.edu/demoRLWM/uploader.php";
- const mail_url = "https://experiments-ccn.berkeley.edu/demoRLWM/data/mailer.php"; // we dont use this anymore
- const alert_url = "https://experiments-ccn.berkeley.edu/demoRLWM/touch_when_closing.php";
+ const save_url = "https://REPLACE_ME/demoRLWM/save_data.php";
+ const upload_url = "https://REPLACE_ME/demoRLWM/uploader.php";
+ const mail_url = "https://REPLACE_ME/demoRLWM/data/mailer.php"; // we dont use this anymore
+ const alert_url = "https://REPLACE_ME/demoRLWM/touch_when_closing.php";
 
 // name of folder where data will be saved
 const data_dir = "data";

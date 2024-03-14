@@ -22,7 +22,7 @@ const TO_MSG = '<div class="exp"><p class="center fb">You took too long to respo
 const COR_FB = '<div class="exp"><p class="center fb cor">+1</p></div>';
 const INCOR_FB = '<div class="exp"><p class="center fb incor">0</p></div>';
 const CONTINUE = '<p class="continue">[Press SPACE to continue]</p>';
-const END_LINK = "https://experiments-ccn.berkeley.edu/"
+const END_LINK = "REPLACE_ME"
 
 // string array of all img files, each element is the path of an img to import
 const IMGS = [];
