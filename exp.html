@@ -32,8 +32,10 @@
 <script type="text/javascript">
 
 let subjID = Number(jsPsych.data.getURLVariable("id")); // get subject ID from URL query string
+let t = new Date();
+let iseq = t.getTime() % 20; // modulo current time with number of sequences
 if (isNaN(subjID)) { // if there is no value, and your counterbalancing depends on your subject ID, generate a random number
-  subjID = getRandomInt(1,10);
+  subjID = iseq;
 }
 
 let d = new Date();
@@ -78,7 +80,7 @@ let timeline = [];
 
 createInstructions(); // create instructions
 
-Papa.parsePromise(`static/csv/sequence0.csv`) // use a Promise if you're importing data
+Papa.parsePromise(`static/csv/sequence${iseq}.csv`) // use a Promise if you're importing data
 
   .then(results => {return createPhase(results);}) // then use previous results as argument for your main experiment function
 
