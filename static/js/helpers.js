@@ -20,18 +20,3 @@ Papa.parsePromise = function(file) {
 		});
 	});
 };
-
-// function to retrieve online csvs - seqs in format "seq#"
-const getCSV = () => {
-  let csv = [];
-  let requestP = new XMLHttpRequest();
-  requestP.open("GET", `https://REPLACE_ME/demoRLWM/static/csv/sequence0.csv`, false); // URL of csv
-  requestP.send(null);
-
-  let jsonObject = requestP.responseText.split(/\r?\n|\r/); // parses the csv as a json object
-  for (var i = 0; i < jsonObject.length; i++) {
-    let t = jsonObject[i].split(',');
-    csv.push(t.map(Number)); // restructure the json object as 2D array
-  }
-  return csv;
-}
